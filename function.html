@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Documentation</title>
+    <body>
+        <p id="teks"></p>
+        <style>
+         body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, sans-serif;
+            background: #f2f2f2;
+         }
+        </style>
+        <script>
+            let nilai = 80;
+            function tampilkanNilai(nilai) {
+
+                if (nilai >= 75) {
+                    return "Selamat Anda Lulus";
+                } else {
+                    return "Silakan Coba Lagi";
+                }
+            }
+            
+                document.getElementById("teks").innerText = 
+                "nilai Anda: " + nilai + ", " + tampilkanNilai(nilai);
+        </script>
+    </body>
+</html>
